@@ -1,0 +1,40 @@
+/* Light and dark theme specific CSS */
+
+@media (prefers-color-scheme: light) {
+    .card {
+        color: #e5e5e5;
+    }
+    #emailHelp {
+        color: #e5e5e5;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #e5e5e5;
+    }
+    a:hover { 
+        color: #e5e5e5 !important;
+        filter: drop-shadow(2px 2px 4px #e5e5e5) !important;
+    }
+    body {
+        background-color: #333;
+    }
+    .card {
+        background-color: #e5e5e5;
+        border: 1px solid #333;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #333;
+        transition: all 0.5s;
+    }
+    .dropdown-menu {
+        background-color: #333;
+        border: 1px solid #e5e5e5;
+    }
+    #hero-background {
+        background-color: #333;
+    }
+    #company-logo {
+        filter: invert(1);
+    }
+}
